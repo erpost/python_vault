@@ -83,7 +83,6 @@ def get_keys_v1(mount_point, path):
 
 def get_keys_v2(mount_point, path):
     # Return dictionary of key/value pair secrets
-    # List secret at 'kv_core_secrets/products/scp/dev/environment/landscape-master-password-rotation-test' V2
     output = client.secrets.kv.v2.read_secret(
         mount_point=mount_point,
         path=path
